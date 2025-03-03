@@ -17,7 +17,7 @@ public class Conversions {
 
     // Converts String to Integer
     public int stringToInteger(String val) {
-        return 0; // Stub
+    	return Integer.parseInt(val);
     }
 
     // Converts Integer to String
