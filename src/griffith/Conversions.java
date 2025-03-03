@@ -12,7 +12,7 @@ public class Conversions {
 
     // Converts Dollar to Euro
     public double dollarToEuro(double dollar) {
-        return 0; // Stub
+    	return dollar * 0.926; // Assuming 1 USD = 0.926 EUR
     }
 
     // Converts String to Integer
