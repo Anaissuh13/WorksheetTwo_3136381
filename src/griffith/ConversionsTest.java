@@ -10,21 +10,14 @@ import org.junit.jupiter.api.Test;
 
 class ConversionsTest {
 
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
+	Conversions conv = new Conversions();
 
-	@AfterAll
-	static void tearDownAfterClass() throws Exception {
-	}
-
-	@BeforeEach
-	void setUp() throws Exception {
-	}
-
-	@AfterEach
-	void tearDown() throws Exception {
-	}
+    @Test
+    public void testEuroToDollar() {
+        assertEquals(1.08, conv.euroToDollar(1), 0.01); // Example exchange rate
+        assertEquals(0, conv.euroToDollar(0), 0.01);
+        assertEquals(10.8, conv.euroToDollar(10), 0.01);
+    }
 
 	@Test
 	void test() {
