@@ -1,9 +1,13 @@
 package griffith;
 
 public class Conversions {
+	//Name - Hussaina Hussain
+	//Student Number - 3136381
+	
+	
 	// Converts Euro to Dollar
     public double euroToDollar(double euro) {
-        return 0; // Stub
+    	return euro * 1.08; // Example exchange rate
     }
 
     // Converts Dollar to Euro
