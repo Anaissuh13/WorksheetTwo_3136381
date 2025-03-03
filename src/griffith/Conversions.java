@@ -28,13 +28,15 @@ public class Conversions {
     // Switches uppercase to lowercase and vice versa
     public String switchCase(String input) {
     	StringBuilder result = new StringBuilder();
+    	
+    	// Iterate through each character in the input string
         for (char c : input.toCharArray()) {
             if (Character.isUpperCase(c)) {
-                result.append(Character.toLowerCase(c));
+                result.append(Character.toLowerCase(c)); // Convert uppercase to lowercase
             } else if (Character.isLowerCase(c)) {
-                result.append(Character.toUpperCase(c));
+                result.append(Character.toUpperCase(c)); // Convert lowercase to uppercase
             } else {
-                result.append(c);
+                result.append(c); // Keep non-alphabet characters unchanged
             }
         }
         return result.toString();
