@@ -22,11 +22,21 @@ public class Conversions {
 
     // Converts Integer to String
     public String integerToString(int val) {
-        return null; // Stub
+    	 return String.valueOf(val);
     }
 
     // Switches uppercase to lowercase and vice versa
     public String switchCase(String input) {
-        return null; // Stub
+    	StringBuilder result = new StringBuilder();
+        for (char c : input.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                result.append(Character.toLowerCase(c));
+            } else if (Character.isLowerCase(c)) {
+                result.append(Character.toUpperCase(c));
+            } else {
+                result.append(c);
+            }
+        }
+        return result.toString();
     }
 }
